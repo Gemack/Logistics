@@ -1,0 +1,640 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  body styling */
+
+body {
+  color: #555;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/* Button styling */
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  transition: background 0.7s, border 0.7s, color 0.9s;
+}
+
+.btn-main {
+  background-color: darkblue;
+}
+
+.btn-main:hover {
+  background-color: rgb(67, 67, 243);
+}
+
+.btn-g {
+  border: 1px solid rgb(67, 67, 243);
+  color: darkblue;
+}
+
+.btn-g:hover {
+  border: 1px solid darkblue;
+}
+
+/* section styling */
+
+section {
+  padding: 2rem;
+}
+
+/* header styling */
+
+h2 {
+  font-size: 2rem;
+  word-spacing: 2px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background: blue;
+  content: " ";
+  width: 11rem;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+/* Icon styling */
+
+.icon-big {
+  font-size: 4rem;
+  text-align: justify;
+  display: block;
+  color: blue;
+  padding-left: 4rem;
+}
+
+.icon-small {
+  color: blue;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Links styling */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+/* styling the header section */
+
+header {
+  background: linear-gradient(315deg, #36096d5b 0%, #37d5d6 70%),
+    url(/Resources/css/css-img/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+/* Centering the main text in the middle of the header using positioning instead of margin and padding */
+
+.header-text-box {
+  height: 70vh;
+  margin: auto;
+  padding-top: 9rem;
+  width: 80vw;
+}
+
+h1 {
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 200%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+/* Styling the Navigation  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  z-index: 1;
+}
+
+#logo {
+  width: 90px;
+  margin-left: 3rem;
+}
+
+#main-nav {
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+#main-nav li {
+  display: inline-block;
+  padding: 1.2rem;
+}
+
+#main-nav li a {
+  padding: 4px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 1.7s;
+}
+
+#main-nav li a:hover {
+  border-bottom: 2px solid rgb(67, 67, 243);
+}
+
+.mobile-nav-icon {
+  margin-top: 2.5rem;
+  margin-right: 2.1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  color: blue;
+  font-size: 2rem;
+}
+
+/*  Section one styling */
+
+.section1 {
+  padding: 2rem;
+}
+
+.section1-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.section1 p {
+  line-height: 145%;
+  width: 90%;
+  font-size: 1.1rem;
+}
+
+.section1 h3 {
+  text-align: justify;
+}
+
+.section1fp {
+  margin: 0 auto;
+  width: 100%;
+  text-align: justify;
+  padding: 00.5rem;
+  letter-spacing: 0.124rem;
+}
+
+.box1 {
+  margin: 0 1rem;
+  padding: 0;
+  text-align: start;
+  letter-spacing: 0;
+}
+
+/* Styling section 2 */
+
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  background: rgba(53, 52, 52, 0.747);
+}
+
+.s1g img {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.01);
+  transition: transform 0.1s opacity 0.1s;
+}
+
+.s1g img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Styling section 3  */
+
+.s3fb {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+.s3fb img {
+  width: 200px;
+}
+
+.s3b1 {
+  margin-left: 8rem;
+  width: 50%;
+  float: left;
+}
+
+.s3b1 img {
+  display: block;
+  float: right;
+}
+
+.s3b2 {
+  margin-left: 7rem;
+  font-size: 1.3rem;
+}
+
+.work-step {
+  margin-bottom: 4rem;
+}
+
+.work-step div {
+  color: rgb(58, 58, 126);
+  border: 2px solid rgb(58, 58, 126);
+  display: inline-block;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  float: left;
+  margin-right: 1rem;
+}
+
+.s3b2 a img {
+  height: 3rem;
+  width: auto;
+}
+
+/* Styling Section four */
+
+.section4 {
+  background: rgba(128, 128, 128, 0.164);
+  font-size: 1rem;
+}
+
+.section4 img {
+  width: 100%;
+  height: 13rem;
+}
+
+.s4fb {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+.s4b {
+  margin: 0.5rem;
+}
+
+.city-feature {
+  margin-top: 0.5rem;
+  color: black;
+}
+
+/* Styling sectioin 5 */
+
+.section5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/Resources/css/css-img/abstract.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-attachment: fixed;
+}
+
+.section5 h2 {
+  color: #fff;
+}
+
+.section5 img {
+  width: 50px;
+  height: auto;
+}
+
+.s5f {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 2px;
+  font-size: 1rem;
+}
+
+/* The big quotation mark */
+
+blockquote::before {
+  content: "\201C";
+  font-size: 2.5rem;
+  display: block;
+}
+
+.s5fb {
+  margin: 1rem;
+}
+
+blockquote img {
+  float: right;
+  border-radius: 50%;
+}
+
+cite {
+  display: block;
+  margin-top: 0.4rem;
+  text-align: right;
+}
+
+/* Styling Section six */
+
+.section6 {
+  background: rgb(221, 216, 216);
+}
+
+.s6f {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+.s6fb {
+  background: rgba(255, 255, 255, 0.356);
+  width: 100%;
+  height: 100%;
+}
+
+.price {
+  color: blue;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.week {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  color: black;
+  padding-bottom: 1rem;
+  border-bottom: 1px blue dotted;
+}
+
+.section6 ul li {
+  margin: 0.8rem 0;
+  margin-left: 3rem;
+  list-style: none;
+}
+
+.section6 a {
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.section6 h3 {
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mnth {
+  font-size: 1rem;
+}
+
+.section6 i {
+  margin-right: 1rem;
+  color: blue;
+  font-size: 1.5rem;
+}
+
+/* Styling section 7 */
+
+.section7 {
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  width: 80%;
+  margin: 1rem auto;
+  color: #000;
+}
+
+.section7 button {
+  display: block;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  width: 6rem;
+  border: none;
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px blue solid;
+}
+
+.form-group textarea {
+  height: 15rem;
+}
+
+.form-group input,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgba(0, 0, 255, 0.349);
+}
+
+#news {
+  width: 1rem;
+  margin-top: 0.5rem;
+}
+
+.check {
+  color: #fff;
+}
+/* styling the footer section */
+
+footer {
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+
+  color: white;
+}
+
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: black;
+}
+
+footer i {
+  font-size: 2rem;
+}
+.ffbc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+footer li {
+  display: inline-block;
+}
+.footer-nav {
+  margin-left: 5rem;
+}
+.footer-nav li {
+  margin: 0 1rem;
+}
+
+.social-links {
+  margin-right: 3rem;
+}
+.social-links li {
+  margin: 0.4rem 0.7rem;
+}
+
+.fb:hover {
+  color: #3b5988;
+}
+.tw:hover {
+  color: #00aced;
+}
+.gog:hover {
+  color: #dd4b39;
+}
+.inst:hover {
+  color: #517fa4;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Animation on scroll property */
+
+.display {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 50px;
+    margin-left: 1rem;
+  }
+  #main-nav {
+    font-size: 12px;
+    margin-right: 1px;
+    margin-top: 2rem;
+  }
+
+  #main-nav li {
+    display: inline-block;
+    padding: 1rem;
+  }
+  h1 {
+    margin-top: 3rem;
+    font-size: 100%;
+  }
+
+  .btn {
+    padding: 5px 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  #logo {
+    width: 60px;
+    margin-left: 1.2rem;
+  }
+  #main-nav {
+    font-size: 14px;
+    margin-right: 1px;
+    margin-top: 2rem;
+  }
+
+  #main-nav li {
+    display: inline-block;
+    padding: 1rem;
+  }
+  h1 {
+    margin-top: 3rem;
+    font-size: 150%;
+  }
+
+  .btn {
+    padding: 8px 20px;
+  }
+}
+
+/* Naming abbr */
+/* 
+Main- nav  = Main Navigation
+Section1fp = Section one First Paragraph
+s1box1 = Section one box one
+s1box2 = Section one box two
+s1box3 = Section one box three
+s1box4 = Section one box four
+s1g = section first grid
+s2g1-8 = section two grid one - eight
+
+s3fb = section three flexbox
+s3b = section three box
+s3b1-2 =  section three box onw and two 
+ETC
+
+*/
